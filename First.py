@@ -1,1 +1,2 @@
-print ("hello world!")
+myName = "Amittai"
+print (myName + " hello world!")
