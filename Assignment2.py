@@ -38,6 +38,7 @@ function within your custom function. Same assumptions for inputs as before.
 """
 import functools
 import math
+import numpy as np
 
 def calc_sum(list_of_numbers):
     
@@ -77,3 +78,12 @@ def calc_std(list_of_numbers):
     mean = calc_mean(list_of_numbers)
     std_list = [(num - mean) ** 2 for num in list_of_numbers]
     return math.sqrt(calc_sum(std_list)/(len(std_list)-1))
+
+def calc_sum_np(arr):
+    return np.sum(arr)
+
+def calc_mean_np(arr):
+    return np.mean(arr)
+
+def calc_std_np(arr):
+    return np.std(arr)
