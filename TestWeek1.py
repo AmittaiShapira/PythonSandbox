@@ -30,9 +30,9 @@ class TestWeek2(unittest.TestCase):
         self.assertEqual(2, calc_sum_np(np.array([1,1])))
         self.assertEqual(45, calc_sum_np(np.array(range(1,10))))
     def test_std_same_numbers_np(self):
-        self.assertEqual(0, calc_std(np.array([1,1,1,1,1,1,1])))
+        self.assertEqual(0, calc_std_np(np.array([1,1,1,1,1,1,1])))
     def test_std_range_np(self):
-        self.assertAlmostEqual(2.449489743, calc_std(np.array(range(1,9))),)
+        self.assertAlmostEqual(2.29128784747792, calc_std_np(np.array(range(1,9))),)
 
 
 # running the tests
